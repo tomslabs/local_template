@@ -17,7 +17,7 @@ Usage
 
 See the included example.rb recipe.
 
-    remote_template "/tmp/hostname" do
+    local_template "/tmp/hostname" do
       source "/tmp/hostname.erb"
       variables :hostname => node[:fqdn]
     end
